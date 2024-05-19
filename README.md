@@ -1,79 +1,70 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+CoffeeApp
+Descrição do Projeto
+CoffeeApp é um aplicativo móvel desenvolvido como parte do projeto de conclusão de curso. Este aplicativo tem como objetivo oferecer aos usuários uma experiência completa para selecionar, detalhar, favoritar, adicionar ao carrinho de compras, realizar pagamentos e verificar o histórico de pedidos de diversos tipos de café.
 
-# Getting Started
+Funcionalidades
+Seleção de Café: Navegue por uma ampla variedade de cafés e escolha o que mais lhe agrada.
+Detalhes do Café: Visualize detalhes específicos de cada café, como ingredientes, tipo de torra, e preços.
+Adicionar aos Favoritos: Marque seus cafés favoritos para fácil acesso no futuro.
+Adicionar ao Carrinho: Adicione cafés ao seu carrinho de compras para uma experiência de compra contínua.
+Pagamento: Realize o pagamento de forma segura utilizando diversos métodos disponíveis.
+Histórico de Pedidos: Verifique o histórico de pedidos anteriores para referência futura.
+Tecnologias Utilizadas
+Linguagem de Programação: TypeScript
+Framework: React Native
+Gerenciamento de Estado: Zustand
+Componentes Visuais: View, Text, ScrollView, TextInput, TouchableOpacity, FlatList
+Customizações de Estilo: StyleSheet do React Native
+Ícones Personalizados: CustomIcon
+Animações: Lottie
+Navegação: @react-navigation/bottom-tabs
+Outras Bibliotecas: LinearGradient (react-native-linear-gradient)
+Estrutura do Projeto
+Telas Implementadas
+Tela de Seleção de Café
+Tela de Detalhes do Café
+Tela de Favoritos
+Tela de Carrinho de Compras
+Tela de Pagamento
+Tela de Histórico de Pedidos
+Componentes Personalizados
+HeaderBar
+CustomIcon
+CoffeeCard
+GradientBGIcon
+PaymentMethod
+PaymentFooter
+PopUpAnimation
+Testes e Feedback
+Durante o desenvolvimento, o aplicativo foi testado por vários usuários, resultando em feedback valioso que foi utilizado para melhorias contínuas. Os testes focaram em funcionalidades como navegação, adição ao carrinho, detalhamento de itens, e processo de pagamento.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Feedback de Usuários
+Usuário 01: Paula Natalia Moreira Freire
+Data: 20/03/24
+Funcionou: Botões de Navegação, Adicionar no Carrinho
+Não Funcionou: Interface criticada, não levou para Tela de Pagamento
+Não Testado: Tela de descrição dos itens, registro, favoritos
+Usuário 02: Paula Natalia Moreira
+Data: 01/04/24
+Funcionou: Botões de Navegação, Adicionar no Carrinho
+Não Funcionou: Descrição de itens abrindo apenas de alguns itens, erro na soma do pagamento
+Não Testado: Editar carrinho de compras, favoritos, registro
+Usuário 03: Lucia Benedita Freire
+Data: 06/05/24
+Funcionou: Botões de Navegação, Adicionar no Carrinho
+Não Funcionou: Editar carrinho de compras
+Não Testado: Favoritos, registro
+Usuário 04: Juvenal Ribeiro Neto
+Data: 12/05/24
+Funcionou: Todas as Telas
+Não Funcionou: Busca com falhas, descrição do item dentro do histórico, descrição dos grãos de café não estava abrindo
+Não Testado: Favoritos, registro
+Usuário 05: Ana Lourdes Mousinho
+Data: 14/05/24
+Funcionou: Todas as Telas
+Não Funcionou: Busca ainda continha alguns erros (corrigido)
+Não Testado: Registro do cliente (tela não foi feita)
+Conclusão
+O CoffeeApp é um projeto de conclusão de curso que demonstra habilidades em desenvolvimento de aplicativos móveis utilizando tecnologias modernas como TypeScript e React Native. Ele oferece uma experiência de usuário rica e funcionalidades completas para a compra de café, desde a seleção até o pagamento e histórico de pedidos.
 
-## Step 1: Start the Metro Server
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Agradecemos a todos que contribuíram com feedback durante os testes e esperamos que este aplicativo proporcione uma excelente experiência para todos os usuários.
